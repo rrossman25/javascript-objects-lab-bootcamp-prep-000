@@ -10,3 +10,14 @@ function updateObjectWithKeyAndValue(object, key, value){
   obj[key] =value;
   return obj;
 }
+
+function deleteFromObjectByKey(obj, key){
+  let obj = Object.assign({}, object);
+  delete obj[key];
+  return obj;
+}
+
+function destructivelyDeleteObjectByKey (obj, key){
+  delete obj[key];
+  return obj;
+}
